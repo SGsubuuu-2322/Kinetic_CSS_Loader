@@ -1,3 +1,5 @@
+/* This is the styling file for this project which is created using CSS3 technology... */
+
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 * {
@@ -14,12 +16,14 @@ body {
   overflow: hidden;
   margin: 0;
 }
+/* This is some genearl stylings written for the project... */
 
 .kinetic {
   position: relative;
   height: 80px;
   width: 80px;
 }
+/* This is for the main container for kinetic loader... */
 
 .kinetic::after,
 .kinetic::before {
@@ -33,11 +37,14 @@ body {
   border-bottom-color: #fff;
   animation: rotateA 2s linear infinite 0.5s;
 }
+/* This is for creating and animating two small triangular containers in that parent container */
+
 
 .kinetic::before {
   transform: rotate(90deg);
   animation: rotateB 2s linear infinite;
 }
+/* This is for second  triangle for rotating it 90degree and for giving it rotating effect with time*/
 
 @keyframes rotateA {
   0%,
@@ -52,6 +59,9 @@ body {
     transform: rotate(360deg);
   }
 }
+/* This is the animation effect for the 1st triangle  to make  a  full  circle  when reach at 180 degree then again start from 0 degree */
+
+
 @keyframes rotateB {
   0%,
   25% {
@@ -65,3 +75,4 @@ body {
     transform: rotate(450deg);
   }
 }
+/* This is the animation effect for the 2nd triangle  when it comes to its original position after completing a full circle rotation */
